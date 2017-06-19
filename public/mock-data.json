@@ -1,0 +1,46 @@
+{
+  "promos": [
+    {
+      "id": "",
+      "name": "",
+      "condition": {
+        "field": "",
+        "value":
+      },
+      "products": [
+        {
+          "id": "",
+          "specialPrice":
+        }
+      ]
+    }
+  ],
+
+  "users": [
+    {
+      "id": "",
+      "username": "unilever",
+      "promos": [
+
+      ]
+    },
+  ],
+
+  "products": [
+    {
+      "id": "",
+      "name": "Classic Ad",
+      "price": 269.99
+    },
+    {
+      "id": "",
+      "name": "Standout Ad",
+      "price": 322.99
+    },
+    {
+      "id": "",
+      "name": "Premium Ad",
+      "price": 394.99
+    }
+  ]
+}
