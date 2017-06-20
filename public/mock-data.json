@@ -1,44 +1,100 @@
 {
-  "promos": [
-    {
-      "id": "",
-      "name": "",
-      "condition": {
-        "field": "",
-        "value":
-      },
-      "products": [
-        {
-          "id": "",
-          "specialPrice":
-        }
-      ]
-    }
-  ],
-
   "users": [
     {
-      "id": "",
+      "id": "Q5LQT4pj8QwkYeAbR",
       "username": "unilever",
-      "promos": [
-
+      "productBundles": [
+        {
+          "type": "xForY",
+          "params": {
+            "requiredProduct": {
+              "id": "SEeT49PYp6SzHKjRb",
+              "qty": 3
+            },
+            "freeProducts": {
+              "id": "SEeT49PYp6SzHKjRb",
+              "qty": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "qf3f2hXNprdkM3hMr",
+      "username": "apple",
+      "productBundles": [
+        {
+          "type": "fixedDiscount",
+          "params": {
+            "productId": "XhrStR2pHaBkHBy9E",
+            "specialPrice": 299.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "CKZ9P8qvkpipa9gbC",
+      "username": "nike",
+      "productBundles": [
+        {
+          "type": "discountWithMinimum",
+          "params": {
+            "productId": "nbddoiFeshMWQn4YY",
+            "minimumQty": 4,
+            "specialPrice": 379.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "mHt7gT6dXZnxXXkFo",
+      "username": "ford",
+      "productBundles": [
+        {
+          "type": "xForY",
+          "params": {
+            "requiredProduct": {
+              "id": "SEeT49PYp6SzHKjRb",
+              "qty": 5
+            },
+            "freeProducts": {
+              "id": "SEeT49PYp6SzHKjRb",
+              "qty": 1
+            }
+          }
+        },
+        {
+          "type": "fixedDiscount",
+          "params": {
+            "productId": "XhrStR2pHaBkHBy9E",
+            "specialPrice": 309.99
+          }
+        },
+        {
+          "type": "discountWithMinimum",
+          "params": {
+            "productId": "nbddoiFeshMWQn4YY",
+            "minimumQty": 3,
+            "specialPrice": 389.99
+          }
+        }
       ]
     },
   ],
 
   "products": [
     {
-      "id": "",
+      "id": "SEeT49PYp6SzHKjRb",
       "name": "Classic Ad",
       "price": 269.99
     },
     {
-      "id": "",
+      "id": "XhrStR2pHaBkHBy9E",
       "name": "Standout Ad",
       "price": 322.99
     },
     {
-      "id": "",
+      "id": "nbddoiFeshMWQn4YY",
       "name": "Premium Ad",
       "price": 394.99
     }
