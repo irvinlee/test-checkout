@@ -7,14 +7,9 @@
         {
           "type": "xForY",
           "params": {
-            "requiredProduct": {
-              "id": "SEeT49PYp6SzHKjRb",
-              "qty": 3
-            },
-            "freeProducts": {
-              "id": "SEeT49PYp6SzHKjRb",
-              "qty": 1
-            }
+            "requiredProductId": "SEeT49PYp6SzHKjRb",
+            "requiredMinimumQty": 3,
+            "qtyToPay": 2
           }
         }
       ]
@@ -26,7 +21,7 @@
         {
           "type": "fixedDiscount",
           "params": {
-            "productId": "XhrStR2pHaBkHBy9E",
+            "requiredProductId": "XhrStR2pHaBkHBy9E",
             "specialPrice": 299.99
           }
         }
@@ -39,8 +34,8 @@
         {
           "type": "discountWithMinimum",
           "params": {
-            "productId": "nbddoiFeshMWQn4YY",
-            "minimumQty": 4,
+            "requiredProductId": "nbddoiFeshMWQn4YY",
+            "requiredMinimumQty": 4,
             "specialPrice": 379.99
           }
         }
@@ -53,33 +48,28 @@
         {
           "type": "xForY",
           "params": {
-            "requiredProduct": {
-              "id": "SEeT49PYp6SzHKjRb",
-              "qty": 5
-            },
-            "freeProducts": {
-              "id": "SEeT49PYp6SzHKjRb",
-              "qty": 1
-            }
+            "requiredProductId": "SEeT49PYp6SzHKjRb",
+            "requiredMinimumQty": 5,
+            "qtyToPay": 4
           }
         },
         {
           "type": "fixedDiscount",
           "params": {
-            "productId": "XhrStR2pHaBkHBy9E",
+            "requiredProductId": "XhrStR2pHaBkHBy9E",
             "specialPrice": 309.99
           }
         },
         {
           "type": "discountWithMinimum",
           "params": {
-            "productId": "nbddoiFeshMWQn4YY",
-            "minimumQty": 3,
+            "requiredProductId": "nbddoiFeshMWQn4YY",
+            "requiredMinimumQty": 3,
             "specialPrice": 389.99
           }
         }
       ]
-    },
+    }
   ],
 
   "products": [
