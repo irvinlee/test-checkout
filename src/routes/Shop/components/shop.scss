@@ -15,10 +15,15 @@
   }
 
   .checkout-wrapper{
-    padding: 15px 0;
-
+    padding: 20px 0;
+    
     a{
+      display: inline-block;
+      background-color: $color-primary;
+      color: white;
       font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
     }
   }
 
