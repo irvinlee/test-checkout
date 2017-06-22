@@ -1,0 +1,67 @@
+@import "variables/colors";
+
+.shop{
+  text-align: center;
+  padding-top: 65px;
+  position: relative;
+
+  .notice{
+    position: absolute;
+    top: 0;
+    border: $color-primary 2px solid;
+    width: 100%;
+    padding: 15px;
+    color: $color-primary;
+  }
+
+  .checkout-wrapper{
+    padding: 15px 0;
+
+    a{
+      font-weight: bold;
+    }
+  }
+
+  .products-wrapper{
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+
+    .product-box{
+      vertical-align: top;
+      position: relative;
+      padding: 10px;
+      border: $color-light-gray 2px solid;
+      height: 360px;
+      margin-bottom: 20px;
+
+      .bottom{
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+      }
+
+      .price{
+        font-weight: bold;
+      }
+    }
+
+    @media (min-width: 480px){
+      .product-box{
+        display: inline-block;
+        width: 49.5%;
+      }
+    }
+
+    @media (min-width: 768px){
+      .product-box{
+        width: 33%;
+        margin-right: 0.3%;
+        &:last-child{
+          margin-right: 0
+        }
+      }
+    }
+
+  }
+}

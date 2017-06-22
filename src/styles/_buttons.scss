@@ -1,0 +1,59 @@
+.call-to-action{
+  outline: none !important;
+	background-color: $color-primary;
+	border: none;
+	color: white;
+	cursor: pointer;
+	position: relative;
+  border-radius: 25px;
+  padding: 20px 40px;
+  font-weight: bold;
+  text-decoration: none;
+	@include linear-gradient(darken($color-primary, 10%), $color-primary);
+
+	&:hover,
+	&:focus {
+		background-color: darken($color-primary, 2%);
+    text-decoration: none;
+    color: lighten($color-primary, 20%);
+	}
+
+	&:before{
+		content: "";
+		display: inline-block;
+		position: absolute;
+		width: 96%;
+		height: 35%;
+		left: 50%;
+		top: 0;
+		margin-left: -48%;
+		@include linear-gradient(rgba(white, 0.65), rgba(white, 0.01));
+		border-radius: 999px 999px 0 0;
+	}
+
+	&:after{
+		content: "";
+		display: inline-block;
+		position: absolute;
+		width: 94.3%;
+		height: 15%;
+		left: 50%;
+		bottom: 0;
+		margin-left: -47%;
+		background-color: rgba(white, 0.15);
+
+		border-radius: 0 0 999px 999px;
+	}
+
+	&:active{
+		@include linear-gradient($color-primary, $color-primary);
+		&:before, &:after{
+			display: none;
+		}
+	}
+}
+
+.add-to-cart{
+  padding: 15px 25px;
+  cursor: pointer;
+}

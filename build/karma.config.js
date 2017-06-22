@@ -3,7 +3,7 @@ const webpackConfig = require('./webpack.config')
 
 const TEST_BUNDLER = './tests/test-bundler.js'
 
-const karmaConfig = {
+module.exports = (cfg) => cfg.set({
   basePath: '../',
   browsers: ['PhantomJS'],
   singleRun: !argv.watch,
@@ -45,6 +45,4 @@ const karmaConfig = {
     stats: 'errors-only',
     noInfo: true,
   },
-}
-
-module.exports = (cfg) => cfg.set(karmaConfig)
+})
