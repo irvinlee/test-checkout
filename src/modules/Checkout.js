@@ -54,7 +54,7 @@ export class Checkout{
     return count
   }
 
-  _getTotalPriceForProduct = (product) => {
+  getTotalPriceForProduct = (product) => {
     if(!this.__pricingRules[product.id]){
       return product.price * product.qty
     }else{
@@ -70,7 +70,7 @@ export class Checkout{
     let total = 0
 
     Object.keys(this.__products).map((k) => {
-      total += this._getTotalPriceForProduct(this.__products[k])
+      total += this.getTotalPriceForProduct(this.__products[k])
     })
 
     return total

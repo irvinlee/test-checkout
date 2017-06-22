@@ -27,6 +27,7 @@ export default class CheckoutView extends React.Component{
               <tr>
                 <th>Item Name</th>
                 <th>Qty</th>
+                <th>Subtotal</th>
               </tr>
             </thead>
             <tbody>
@@ -34,11 +35,12 @@ export default class CheckoutView extends React.Component{
                 <tr key={ index }>
                   <td>{item.name}</td>
                   <td>{item.qty}</td>
+                  <td>{ moneyFormat( this.checkoutModel.getTotalPriceForProduct(item)) }</td>
                 </tr>
               )) }
               <tr>
                 <td>Total: </td>
-                <td>{this.checkoutModel.total()}</td>
+                <td>{moneyFormat(this.checkoutModel.total()) }</td>
               </tr>
             </tbody>
           </table>

@@ -52,15 +52,16 @@ export default class Shop extends React.Component{
 
     return (
       <div className="shop">
-        <div className="test-user-select">
-          Test As:
-          <select value={this.props.state.shop.user.id} onChange={ this.selectUser }>
-            <option value="guest">Guest</option>
-            {users.map( (user) => (
-              <option key={user.id} value={ user.id }>{user.username}</option>
-            ))}
-          </select>
-        </div>
+        {users && (
+          <div className="test-user-select">
+            Test As:
+            <select value={this.props.state.shop.user.id} onChange={ this.selectUser }>
+              <option value="guest">Guest</option>
+              {users.map( (user) => (
+                <option key={user.id} value={ user.id }>{user.username}</option>
+              ))}
+            </select>
+          </div>)}
         {displayNotice && (
           <div className="notice">{ noticeMsg }</div>
         )}
