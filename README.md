@@ -6,6 +6,8 @@
 * yarn `^0.23.0` or npm `^3.0.0`
 
 ## Running the Project
+1. Install dependencies: `yarn`
+2. Run a yarn script from the table below:
 |`yarn <script>`    |Description|
 |-------------------|-----------|
 |`start`            |Serves your app at `localhost:3000`|
