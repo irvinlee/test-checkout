@@ -40,6 +40,7 @@ export default class CheckoutView extends React.Component{
               )) }
               <tr>
                 <td>Total: </td>
+                <td></td>
                 <td>{moneyFormat(this.checkoutModel.total()) }</td>
               </tr>
             </tbody>
